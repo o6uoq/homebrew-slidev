@@ -8,7 +8,7 @@ class Slidev < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", "-ddd", "--global", "--prefix", prefix, libexec
+    system "npm", "install", "-ddd", "--global", "--prefix", libexec
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
